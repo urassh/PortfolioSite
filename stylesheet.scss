@@ -14,201 +14,207 @@
 }
 
 body {
-    position: relative;
-    background-color: #3568A3;
-    .wrapper {
-        padding: 5rem;
-    }
-    .top {
-        width: 100%;
-        height: 850px;
-        background-image: url("./Images/topBackground.png");
-        background-size: cover;
+    
+    
+    main {
         position: relative;
-        .motto {
+        z-index: 1;
+        width:100%;
+        height: 100%;
+        .wrapper {
+            padding: 5rem;
+        }
+        .top {
             width: 100%;
-            background-color: rgba($color: #000000, $alpha: 0.5);
-            margin-top: 7rem;
-            margin-left: -5rem;
-            h2 {
-                color: white;
-                font-size: 4.5rem;
-                font-weight: lighter;
-                letter-spacing: 1rem;
-                margin-left: 5rem;
+            height: 850px;
+            background-image: url("./Images/topBackground.png");
+            background-size: cover;
+            position: relative;
+            .motto {
+                width: 100%;
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                margin-top: 7rem;
+                margin-left: -5rem;
+                h2 {
+                    color: white;
+                    font-size: 4.5rem;
+                    font-weight: lighter;
+                    letter-spacing: 1rem;
+                    margin-left: 5rem;
+                }
             }
-        }
-        .name {
-            position: absolute;
-            left: 5rem;
-            bottom: 10rem;
-            z-index: 10;
-            margin-top: 25rem;
-            display: flex;
-            h1 {
-                color: #ACB6E5;
-                background: linear-gradient(45deg, #FA8BFF 16%, #2BD2FF 57%, #2BFF88 90%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-size: 300% auto;
-                font-size: 15rem;
-                letter-spacing: 2rem;
-                font-weight: lighter;
-                animation: gradientEffect 2.0s infinite alternate;
-                -webkit-text-stroke: 1px rgba($color: #222, $alpha: 0.7);
-                box-shadow: 0 20px 20px rgba(0, 0, 0, 0.16);
-            }
-            
-        }
-        img {
-            position: absolute;
-            right: 2.5rem;
-            bottom: 0;
-            width: 75rem;
-        }
-    }
-    .achievements {
-        position: relative;
-        width: 100%;
-        display: inline-flex;
-        flex-direction: column;
-        img {
-            margin: 0 0 0 auto;
-            padding-top: 0.5rem;
-            width: 65.5rem;
-            height: 60rem;
-        }
-        .contents {
-            position: absolute;
-            top: 10rem;
-            left: 5rem;
-            z-index: 10;
-            #music {
+            .name {
+                position: absolute;
+                left: 5rem;
+                bottom: 10rem;
+                z-index: 10;
+                margin-top: 25rem;
                 display: flex;
-                .texts {
-                    padding-right: 12rem;
-                    .title {
-                        margin-bottom: -2.4rem;
-                        h3 {
-                            padding-left: 0.5rem;
-                            font-weight: lighter;
+                h1 {
+                    color: #ACB6E5;
+                    background: linear-gradient(45deg, #FA8BFF 16%, #2BD2FF 57%, #2BFF88 90%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-size: 300% auto;
+                    font-size: 15rem;
+                    letter-spacing: 2rem;
+                    font-weight: lighter;
+                    animation: gradientEffect 2.0s infinite alternate;
+                    -webkit-text-stroke: 1px rgba($color: #222, $alpha: 0.7);
+                    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.16);
+                }
+                
+            }
+            img {
+                position: absolute;
+                right: 2.5rem;
+                bottom: 0;
+                width: 75rem;
+            }
+        }
+        .achievements {
+            position: relative;
+            width: 100%;
+            display: inline-flex;
+            flex-direction: column;
+            img {
+                margin: 0 0 0 auto;
+                padding-top: 0.5rem;
+                width: 65.0rem;
+                height: 60rem;
+            }
+            .contents {
+                position: absolute;
+                top: 10rem;
+                left: 5rem;
+                z-index: 10;
+                #music {
+                    display: flex;
+                    .texts {
+                        padding-right: 12rem;
+                        .title {
+                            margin-bottom: -2.4rem;
+                            h3 {
+                                padding-left: 0.5rem;
+                                font-weight: lighter;
+                                color: white;
+                                font-size: 8rem;
+                            }
+                        }
+                        p {
+                            border-top: 0.1rem solid #fff;
+                            text-align: right;
+                            font-size: 2.5rem;
                             color: white;
-                            font-size: 8rem;
+                        }
+                        .text {
+                            margin-top: 5rem;
+                            margin-left: 5rem;
+                            color: white;
+                            font-size: 2.5rem;
+                            line-height: 7rem;
+                            letter-spacing: 0.5rem;
+                            font-weight: normal;
+                            opacity: 0.9;
                         }
                     }
-                    p {
-                        border-top: 0.1rem solid #fff;
-                        text-align: right;
-                        font-size: 2.5rem;
-                        color: white;
-                    }
-                    .text {
-                        margin-top: 5rem;
-                        margin-left: 5rem;
-                        color: white;
-                        font-size: 2.5rem;
-                        line-height: 7rem;
-                        letter-spacing: 0.5rem;
-                        font-weight: normal;
-                        opacity: 0.9;
+                    img {
+                        width: 40rem;
+                        height: 40rem;
                     }
                 }
-                img {
-                    width: 40rem;
-                    height: 40rem;
+                #programming {
+                    display: flex;
+                    margin-top: 15rem;
+                    .texts {
+                        padding-left: 8rem;
+                        position: relative;
+                        .title {
+                            margin-bottom: -2.3rem;
+                            padding-left: 30rem;
+                            h3 {
+                                padding-left: 0.5rem;
+                                font-weight: lighter;
+                                color: white;
+                                font-size: 8.0rem;
+                            }
+                        }
+                        p {
+                            border-top: 0.1rem solid #fff;
+                            font-size: 2.5rem;
+                            color: white;
+                        }
+                        .text {
+                            margin-top: 5rem;
+                            color: white;
+                            font-size: 2.5rem;
+                            line-height: 6rem;
+                            letter-spacing: 0.5rem;
+                            font-weight: normal;
+                            opacity: 0.9;
+                        }
+                        img {
+                            position: absolute;
+                            top: 15rem;
+                            right: -5rem;
+                            width: 40rem;
+                            height: 50.5rem;
+                        }
+                    }
+                    img {
+                        width: 40rem;
+                        height: 40rem;
+                    }
                 }
-            }
-            #programming {
-                display: flex;
-                margin-top: 15rem;
-                .texts {
-                    padding-left: 8rem;
-                    position: relative;
+                #links {
+                    margin-top: 15rem;
                     .title {
-                        margin-bottom: -2.3rem;
-                        padding-left: 30rem;
-                        h3 {
+                        h1 {
                             padding-left: 0.5rem;
+                            margin-bottom: -2.4rem;
                             font-weight: lighter;
                             color: white;
                             font-size: 8.0rem;
                         }
+                        .border {
+                            border-top: 0.1rem solid #fff;
+                        }
                     }
-                    p {
-                        border-top: 0.1rem solid #fff;
-                        font-size: 2.5rem;
-                        color: white;
-                    }
-                    .text {
-                        margin-top: 5rem;
-                        color: white;
-                        font-size: 2.5rem;
-                        line-height: 6rem;
-                        letter-spacing: 0.5rem;
-                        font-weight: normal;
-                        opacity: 0.9;
-                    }
-                    img {
-                        position: absolute;
-                        top: 15rem;
-                        right: -5rem;
-                        width: 40rem;
-                        height: 50.5rem;
-                    }
-                }
-                img {
-                    width: 40rem;
-                    height: 40rem;
-                }
-            }
-            #links {
-                margin-top: 15rem;
-                .title {
-                    h1 {
-                        padding-left: 0.5rem;
-                        margin-bottom: -2.4rem;
-                        font-weight: lighter;
-                        color: white;
-                        font-size: 8.0rem;
-                    }
-                    .border {
-                        border-top: 0.1rem solid #fff;
-                    }
-                }
-                .snsList {
-                    margin-left: 5rem;
-                    li {
-                        a {
-                            display: inline-block;
-                            width: 100%;
-                            transition: transform .3s;
-                            
-                            color: white;
-                            font-size: 5rem;
-                            letter-spacing: 1rem;
-                            line-height: 10rem;
-                            &:hover {
-                                transform: scale(0.9);
-                                color: #29aeff;
-                                border-bottom: 1px solid #29aeff;
+                    .snsList {
+                        margin-left: 5rem;
+                        li {
+                            a {
+                                display: inline-block;
+                                width: 100%;
+                                transition: transform .3s;
+                                
+                                color: white;
+                                font-size: 5rem;
+                                letter-spacing: 1rem;
+                                line-height: 10rem;
+                                &:hover {
+                                    transform: scale(0.9);
+                                    color: #29aeff;
+                                    border-bottom: 1px solid #29aeff;
+                                }
                             }
                         }
                     }
                 }
             }
         }
-    }
-    footer {
-        margin-top: 120rem;
-        background-color: #061a26;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 10rem;
-        width: 100%;
-        div {
-            font-size: 2.0rem;
-            color: white;
+        footer {
+            margin-top: 120rem;
+            background-color: #061a26;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10rem;
+            width: 100%;
+            div {
+                font-size: 2.0rem;
+                color: white;
+            }
         }
     }
 }

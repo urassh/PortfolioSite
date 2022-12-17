@@ -5,70 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="./geometry.css">
     <title>うらっしゅの部屋</title>
 </head>
 <body>
-    <div class="wrapper top">
-        <div class="motto">
-            <h2>
-                音楽とプログラミングを操り<br>
-                新しいを想像する 未来のエンジニア
-            </h2>
+    <div id="particles-js"></div>
+    <main>
+        <div class="wrapper top">
+            <div class="motto">
+                <h2>
+                    音楽とプログラミングを操り<br>
+                    新しいを想像する 未来のエンジニア
+                </h2>
+            </div>
+            <div class="name">
+                <h1>うらっしゅ</h1>
+            </div>
+            <img src="./Images/shuto_hiro.png" alt="">
         </div>
-        <div class="name">
-            <h1>うらっしゅ</h1>
-        </div>
-        <img src="./Images/shuto_hiro.png" alt="">
-    </div>
-    <div class="achievements">
-        <img src="./Images/code.png" alt="">
-        <div class="contents">
-            <div id="music">
-                <div class="texts">
+        <div class="achievements">
+            <img src="./Images/code.png" alt="">
+            <div class="contents">
+                <div id="music">
+                    <div class="texts">
+                        <div class="title">
+                            <h3>Music...</h3>
+                        </div>
+                        <p>ピアノ / 吹奏楽 / マーチング / ベース</p>
+                        <div class="text">
+                            様々な音楽の形に触れることで、<br>
+                            一人で技術を突き詰める楽しさ<br>
+                            仲間と団結することの"大切さ"を学んだ。
+                        </div>
+                    </div>
+                    <img src="./Images/trombone.png" alt="">
+                </div>
+                <div id="programming">
+                    <img src="./Images/cording.png" alt="">
+                    <div class="texts">
+                        <div class="title">
+                            <h3>Programming</h3>
+                        </div>
+                        <p>Python / JavaScript / Swift / Ruby…</p>
+                        <div class="text">
+                            高校二年生からプログラミングを<br>
+                            始め、学習を始めて半年で、<br>
+                            50個を超えるアプリを<br>
+                            開発してきた。
+                        </div>
+                        <img src="./Images/smartphone.png" alt="">
+                    </div>
+                </div>
+                <div id="links">
                     <div class="title">
-                        <h3>Music...</h3>
+                        <h1>Links</h1>
+                        <div class="border"></div>
                     </div>
-                    <p>ピアノ / 吹奏楽 / マーチング / ベース</p>
-                    <div class="text">
-                        様々な音楽の形に触れることで、<br>
-                        一人で技術を突き詰める楽しさ<br>
-                        仲間と団結することの"大切さ"を学んだ。
-                    </div>
+                    <ul class="snsList">
+                        <li><a href="https://www.instagram.com/urassh_engineer/">Instagram</a></li>
+                        <li><a href="https://twitter.com/urassh_engineer">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/shuto.1011">Facebook</a></li>
+                        <li><a href="https://github.com/urassh">GitHub</a></li>
+                    </ul>
                 </div>
-                <img src="./Images/trombone.png" alt="">
-            </div>
-            <div id="programming">
-                <img src="./Images/cording.png" alt="">
-                <div class="texts">
-                    <div class="title">
-                        <h3>Programming</h3>
-                    </div>
-                    <p>Python / JavaScript / Swift / Ruby…</p>
-                    <div class="text">
-                        高校二年生からプログラミングを<br>
-                        始め、学習を始めて半年で、<br>
-                        50個を超えるアプリを<br>
-                        開発してきた。
-                    </div>
-                    <img src="./Images/smartphone.png" alt="">
-                </div>
-            </div>
-            <div id="links">
-                <div class="title">
-                    <h1>Links</h1>
-                    <div class="border"></div>
-                </div>
-                <ul class="snsList">
-                    <li><a href="https://www.instagram.com/urassh_engineer/">Instagram</a></li>
-                    <li><a href="https://twitter.com/urassh_engineer">Twitter</a></li>
-                    <li><a href="https://www.facebook.com/shuto.1011">Facebook</a></li>
-                    <li><a href="https://github.com/urassh">GitHub</a></li>
-                </ul>
             </div>
         </div>
-    </div>
-    <footer>
-        <div>©️ Shuto Urayama contribute to music and technology.</div>
-    </footer>
+        <footer>
+            <div>©️ Shuto Urayama contribute to music and technology.</div>
+        </footer>
+    </main>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./geometry.js"></script>
 </body>
 </html>
