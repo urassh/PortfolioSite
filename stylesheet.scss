@@ -14,8 +14,6 @@
 }
 
 body {
-    
-    
     main {
         position: relative;
         z-index: 1;
@@ -99,6 +97,7 @@ body {
                                 font-weight: lighter;
                                 color: white;
                                 font-size: 8rem;
+                                transition: all .3s;
                             }
                         }
                         p {
@@ -115,7 +114,12 @@ body {
                             line-height: 7rem;
                             letter-spacing: 0.5rem;
                             font-weight: normal;
-                            opacity: 0.9;
+                            opacity: 0.5;
+                            transition: all 0.2s;
+                            &:hover {
+                                transform: scale(1.1);
+                                opacity: 1;
+                            }
                         }
                     }
                     img {
@@ -151,7 +155,12 @@ body {
                             line-height: 6rem;
                             letter-spacing: 0.5rem;
                             font-weight: normal;
-                            opacity: 0.9;
+                            opacity: 0.5;
+                            transition: all 0.2s;
+                            &:hover {
+                                transform: scale(1.1);
+                                opacity: 1;
+                            }
                         }
                         img {
                             position: absolute;

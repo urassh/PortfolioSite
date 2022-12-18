@@ -1,7 +1,7 @@
 particlesJS("particles-js",{
 	"particles":{
 		"number":{
-			"value":38,//この数値を変更すると幾何学模様の数が増減できる
+			"value":40,//この数値を変更すると幾何学模様の数が増減できる
 			"density":{
 				"enable":true,
 				"value_area":800
